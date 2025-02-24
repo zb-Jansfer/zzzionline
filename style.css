@@ -7094,3 +7094,39 @@ blockquote {
 .popup-message button:hover {
     background-color: darkred;
 }
+
+
+/* Centering the Secret Message Box */
+.popup-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    text-align: center;
+    z-index: 1000;
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Close Button for Message Box */
+.popup-message button {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.popup-message button:hover {
+    background-color: darkred;
+}
