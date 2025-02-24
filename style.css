@@ -7035,3 +7035,62 @@ blockquote {
   font-style: italic;
   font-display: swap;
 }
+
+
+/* Hide Webflow Badge */
+.w-webflow-badge {
+    display: none !important;
+}
+
+/* Secret Button - Small & Centered at Bottom */
+.secret-button {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    opacity: 0.5; /* Make it subtle */
+}
+
+.secret-button:hover {
+    opacity: 1; /* Full visibility when hovered */
+}
+
+/* Secret Message Box - Stay Until Closed */
+.popup-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    text-align: center;
+    z-index: 1000;
+    display: none;
+}
+
+/* Close Button for Message Box */
+.popup-message button {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.popup-message button:hover {
+    background-color: darkred;
+}
