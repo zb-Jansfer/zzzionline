@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         secretButton.addEventListener("click", function () {
             let answer = prompt("英雄");
             if (answer === "所见略同") {
-                document.getElementById("secret-message-box").style.display = "flex";
+                secretMessageBox.style.display = "flex";
             } else {
                 alert("❌ 答案错误，请重新输入！");
             }
