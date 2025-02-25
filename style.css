@@ -1,6 +1,21 @@
 .popup-message {
     display: none;
     position: fixed;
+    top: 12.5vh; /* Centered vertically with 75% height */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75vw; /* Message box occupies 75% of screen width */
+    height: 75vh; /* Message box occupies 75% of screen height */
+    background: white; /* White background */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    z-index: 9999;
+    
+    display: none;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -21,6 +36,17 @@
 }
 
 .popup-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Evenly spread out */
+    align-items: center;
+    text-align: center;
+    padding: 30px 0 10px; /* Add spacing between image and text */
+    font-size: 27px; /* Increased to 150% */
+    flex-wrap: nowrap; /* Prevents wrapping but ensures fitting inside screen */
+    overflow: hidden; /* Avoids text spilling out */
+    white-space: nowrap; /* Keeps text in one line but ensures it fits */
+    
     width: 100%;
     display: flex;
     justify-content: space-between; /* Evenly spread out */
@@ -79,6 +105,19 @@
 }
 
 .plain-close-button {
+    position: absolute;
+    top: 10px; /* Position close button at the top-right over the image */
+    right: 20px;
+    background: none; /* No background */
+    border: none; /* No red border */
+    font-size: 12px; /* Smaller text size than the main text */
+    color: black;
+    cursor: pointer;
+    padding: 2px 0;
+    width: auto;
+    display: inline-block; /* Ensures proper alignment */
+    text-align: center;
+    
     background: none; /* No background */
     border: none; /* No border */
     font-size: 12px; /* Smaller than the main text */
