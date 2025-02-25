@@ -13,9 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
             if (answer === "所见略同") {
                 console.log("✅ Correct Answer Entered");
                 secretMessageBox.style.display = "flex";
-                secretMessageBox.style.flexDirection = "column";
-                secretMessageBox.style.justifyContent = "center";
-                secretMessageBox.style.alignItems = "center";
             } else {
                 console.log("❌ Incorrect Answer Entered");
                 alert("❌ 答案错误，请重新输入！");
