@@ -59,8 +59,8 @@
     justify-content: space-between; /* Evenly distribute text horizontally */
     align-items: center;
     text-align: center;
-    padding: 100px 0 3px; /* Add spacing between image and text */
-    font-size: 12px; /* Increase text size to 150% */
+    padding: 100px 0 5px; /* Add spacing between image and text */
+    font-size: 20px; /* Increase text size to 150% */
     flex-wrap: nowrap; /* Prevents wrapping but ensures text fits */
     overflow: hidden; /* Avoid text spilling out of box */
     white-space: nowrap; /* Keep text in a single line while maintaining spacing */
