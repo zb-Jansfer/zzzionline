@@ -7071,6 +7071,25 @@ blockquote {
 .popup-message {
     display: none;
     position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    background: white; /* Change background to opaque white */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: black; /* Ensure text is visible on white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* Keep it on top */
+    
+    display: none;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -7117,6 +7136,25 @@ blockquote {
 
 /* Centering the Secret Message Box */
 .popup-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    background: white; /* Change background to opaque white */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: black; /* Ensure text is visible on white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* Keep it on top */
+    
     display: none;
     position: fixed;
     top: 0;
