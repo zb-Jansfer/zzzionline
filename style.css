@@ -1,3 +1,4 @@
+/* Styling for the message box */
 .popup-message {
     display: none;
     position: fixed;
@@ -6,156 +7,62 @@
     transform: translateX(-50%);
     width: 75vw; /* Message box occupies 75% of screen width */
     height: 75vh; /* Message box occupies 75% of screen height */
-    background: white; /* White background */
+    background: white; /* White background for message box */
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
     color: black;
-    z-index: 9999;
-    
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: white; /* White background */
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    color: black;
-    z-index: 9999;
+    z-index: 9999; /* Ensures the message box is on top of other elements */
+    border-radius: 10px; /* Optional: Add slight rounded corners for aesthetics */
 }
 
+/* Styling for the close button - no background, positioned in the top-right corner */
+.plain-close-button {
+    position: absolute;
+    top: 10px; /* Place close button at the top-right corner over the image */
+    right: 20px;
+    background: none; /* No background */
+    border: none; /* No border */
+    font-size: 12px; /* Smaller text size than the main content */
+    color: black; /* Ensure visibility on light background */
+    cursor: pointer; /* Show pointer cursor on hover */
+    padding: 2px 0;
+    width: auto;
+    display: inline-block; /* Ensures proper alignment */
+    text-align: center;
+}
+
+/* Styling for the popup image - fills the message box width */
 .popup-image {
-    width: 100%; /* Image fills the entire width */
-    height: auto;
+    width: 100%; /* Image spans the entire width of the message box */
+    height: auto; /* Maintain aspect ratio */
     display: block;
 }
 
+/* Styling for the popup text section */
 .popup-text {
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Evenly spread out */
+    justify-content: space-between; /* Evenly distribute text horizontally */
     align-items: center;
     text-align: center;
-    padding: 30px 0 10px; /* Add spacing between image and text */
-    font-size: 27px; /* Increased to 150% */
-    flex-wrap: nowrap; /* Prevents wrapping but ensures fitting inside screen */
-    overflow: hidden; /* Avoids text spilling out */
-    white-space: nowrap; /* Keeps text in one line but ensures it fits */
-    
-    width: 100%;
-    display: flex;
-    justify-content: space-between; /* Evenly spread out */
-    align-items: center;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 27px; /* Increased to 150% */
-    flex-wrap: nowrap; /* Prevents wrapping but ensures fitting inside screen */
-    overflow: hidden; /* Avoids text spilling out */
-    white-space: nowrap; /* Keeps text in one line but ensures it fits */
-    
-    width: 100%;
-    display: flex;
-    justify-content: space-between; /* Ensure horizontal text alignment */
-    align-items: center;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 18px;
-    
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 18px;
+    padding: 40px 0 10px; /* Add spacing between image and text */
+    font-size: 27px; /* Increase text size to 150% */
+    flex-wrap: nowrap; /* Prevents wrapping but ensures text fits */
+    overflow: hidden; /* Avoid text spilling out of box */
+    white-space: nowrap; /* Keep text in a single line while maintaining spacing */
 }
 
+/* Styling for the "Click for Secret" button */
 .secret-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: none; /* Remove any background */
+    background: none; /* No background to match footer buttons like LinkedIn */
     border: none;
     font-size: 16px;
     color: white !important; /* Ensure button text is white */
     cursor: pointer;
-    z-index: 10000;
-    
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: none; /* Remove any background */
-    border: none;
-    font-size: 16px;
-    color: white; /* Change button text color to white */
-    cursor: pointer;
-    z-index: 10000;
-    
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    font-size: 16px;
-    color: black;
-    cursor: pointer;
-    z-index: 10000;
-}
-
-.plain-close-button {
-    position: absolute;
-    top: 10px; /* Position close button at the top-right over the image */
-    right: 20px;
-    background: none; /* No background */
-    border: none; /* No red border */
-    font-size: 12px; /* Smaller text size than the main text */
-    color: black;
-    cursor: pointer;
-    padding: 2px 0;
-    width: auto;
-    display: inline-block; /* Ensures proper alignment */
-    text-align: center;
-    
-    background: none; /* No background */
-    border: none; /* No border */
-    font-size: 12px; /* Smaller than the main text */
-    color: black;
-    cursor: pointer;
-    padding: 2px 0;
-    width: auto;
-    display: inline-block; /* Ensures proper alignment */
-    text-align: center;
-    margin-top: 5px; /* Reduce spacing */
-    
-    background: none; /* No background */
-    border: none; /* No red border */
-    font-size: 14px; /* Smaller text size than the main text */
-    color: black;
-    cursor: pointer;
-    padding: 5px 0;
-    width: auto;
-    display: inline-block; /* Ensures proper alignment */
-    text-align: center;
-    margin-top: 5px; /* Reduce spacing */
-    
-    background: none; /* Remove background color */
-    border: none; /* No red border */
-    font-size: 18px; /* Match text size */
-    color: black;
-    cursor: pointer;
-    padding: 10px 0;
-    width: 100%;
-    display: block;
-    text-align: center;
-    
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #FF4C4C;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
+    z-index: 10000; /* Ensures visibility above other elements */
 }
