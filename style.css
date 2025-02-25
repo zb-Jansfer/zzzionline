@@ -2,11 +2,11 @@
 .popup-message {
     display: none;
     position: fixed;
-    top: 12.5vh; /* Centered vertically with 75% height */
+    top: 7.5vh; /* Centered vertically with 75% height */
     left: 50%;
     transform: translateX(-50%);
-    width: 75vw; /* Message box occupies 75% of screen width */
-    height: 75vh; /* Message box occupies 75% of screen height */
+    width: 85vw; /* Message box occupies 75% of screen width */
+    height: 85vh; /* Message box occupies 75% of screen height */
     background: white; /* White background for message box */
     justify-content: center;
     align-items: center;
@@ -47,7 +47,7 @@
     justify-content: space-between; /* Evenly distribute text horizontally */
     align-items: center;
     text-align: center;
-    padding: 40px 0 10px; /* Add spacing between image and text */
+    padding: 40px 0 20px; /* Add spacing between image and text */
     font-size: 27px; /* Increase text size to 150% */
     flex-wrap: nowrap; /* Prevents wrapping but ensures text fits */
     overflow: hidden; /* Avoid text spilling out of box */
