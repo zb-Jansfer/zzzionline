@@ -25,7 +25,7 @@
     background: none; /* No background */
     border: none; /* No border */
     font-size: 12px; /* Smaller text size than the main content */
-    color: black; /* Ensure visibility on light background */
+    color: white; /* Ensure visibility on light background */
     cursor: pointer; /* Show pointer cursor on hover */
     padding: 2px 0;
     width: auto;
@@ -47,7 +47,7 @@
     justify-content: space-between; /* Evenly distribute text horizontally */
     align-items: center;
     text-align: center;
-    padding: 40px 0 20px; /* Add spacing between image and text */
+    padding: 80px 0 5px; /* Add spacing between image and text */
     font-size: 27px; /* Increase text size to 150% */
     flex-wrap: nowrap; /* Prevents wrapping but ensures text fits */
     overflow: hidden; /* Avoid text spilling out of box */
